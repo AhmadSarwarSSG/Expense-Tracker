@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="query.js"></script>
+    <script defer src="filter.js"></script>
+    <title>Filter</title>
+    <style>
+        *
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #main
+        {
+            width: 70%;
+            margin: auto;
+        }
+        h1
+        {
+            text-align: center;
+            color: green;
+        }
+        #head {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        th {
+            padding: 10px;
+        }
+        #list
+        {
+            width: 100%;
+            padding: 5px;
+        }
+        #min, #max
+        {
+            width: 25%;
+            padding: 5px;
+        }
+        div
+        {
+            margin-top: 20px;
+        }
+        label
+        {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #tab_full
+        {
+            margin: auto;
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+        #head {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        th, td{
+            padding: 5px;
+            border: 1px solid gray;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #filter
+        {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 25%;
+            padding: 5px 30px 5px 30px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        #back
+        {
+            text-decoration: none;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            width: 25%;
+            padding: 5px 30px 5px 30px;
+            background-color: rgba(255, 255, 255, 0);
+            color: green;
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form>
+            <div>
+                <h1><u>Filter Expense</u></h1>
+                <label>Type</label>
+                <select id="list">
+                </select>
+            </div>
+            <div>
+                <div>
+                    <label>Range</label>
+                </div>
+                <input type="number" id="min" placeholder="Minimun">
+                <input type="number" id="max" placeholder="Maximun">
+            </div>
+        </form>
+        <button onclick="filter()" id="filter">Show Filter Result</button>
+        <table id="tab_full">
+            <tr id="head">
+                <th>Sr.</th>
+                <th>Expense Summary</th>
+                <th>Descrpition</th>
+                <th>Price</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+        </table>
+        <a href="Task02.html"><button id="back">Go Back to Homepage</button></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="query.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <style>
+        *
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #main
+        {
+            width: 60%;
+            margin: auto;
+        }
+        h1,h3
+        {
+            text-align: center;
+        }
+        #month
+        {
+            padding: 7px;
+            width: 49%;
+            margin: auto;
+            margin-left: 1%;
+        }
+        #year
+        {
+            padding: 7px;
+            margin: auto;
+            width: 49%;
+        }
+        #id
+        {
+            width: 100%;
+        }
+        #back
+        {
+            text-decoration: none;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            width: 35%;
+            padding: 7px;
+            background-color: rgba(255, 255, 255, 0);
+            color: green;
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+    </style>
+    <title>Chart</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Graph Based Summary</h1>
+        <h3>Select Time Period</h3>
+        <select id="month"  onclick="xvalue()"></select>
+        <select id="year" onclick="xvalue()"></select>
+        <canvas id="myChart"></canvas>
+        <a href="Task02.html"><button id="back">Go Back to Homepage</button></a>
+    </div>
+    <script src="Chart.js">
+    </script>
+</body>
+</html>

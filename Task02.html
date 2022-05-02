@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="query.js"></script>
+    <script src="Update.js"></script>
+    
+    <title>Document</title>
+    <style>
+        *
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #main
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            width: 70%;
+        }
+        h1
+        {
+            text-align: center;
+            color: green;
+        }
+        #tab_full
+        {
+            margin: auto;
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+        #head {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        th, td{
+            padding: 5px;
+            border: 1px solid gray;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #addBtn
+        {
+            margin-left: 30%;
+            width: 20%;
+            padding: 5px 30px 5px 30px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        #filterBtn
+        {
+            width: 20%;
+            padding: 5px 30px 5px 30px;
+            background-color: rgba(0, 0, 0, 0);
+            color: black;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        #btn
+        {
+            margin-top: 20px;
+            color: rgb(219, 219, 219);
+        }
+        #delete
+        {
+            width: 40%;
+            background: red;
+            color: white;
+            margin: 2px;
+            border: 0px solid black;
+            padding: 7px;
+            border-radius: 5px;
+        }
+        #update
+        {
+            width: 40%;
+            background: green;
+            color: white;
+            margin: 2px;
+            border: 0px solid black;
+            padding: 7px;
+            border-radius: 5px;
+        }
+        #chart
+        {
+            text-align: center;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            width: 45%;
+            padding: 7px;
+            background-color: rgba(255, 255, 255, 0);
+            color: green;
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+    </style>
+    <script defer src="Page.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <h1><u>My Expense Tracker App</u></h1>
+        <table id="tab_full">
+            <tr id="head">
+                <th>Sr.</th>
+                <th>Expense Summary</th>
+                <th>Descrpition</th>
+                <th>Price</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Option</th>
+            </tr>
+        </table>
+        <div id="btn" style="">
+            <div>
+                <a href="Task02_New_Form.html"><button id="addBtn"> Add New Expense</button></a>
+            <a href="Filter.html"><button id="filterBtn"> Filter Expense</button></a>
+            </div>
+        </div>
+        <a href="Task02_Chart.html"><button id="chart">Show Graph</button></a>
+    </div>
+</body>
+
+</html>

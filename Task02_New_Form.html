@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="query.js"></script>
+    <script defer src="Task02.js"></script>
+    <title>Add new</title>
+    <style>
+        *
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #main
+        {
+            width: 70%;
+            margin: auto;
+        }
+        h2
+        {
+            text-align: center;
+        }
+        table
+        {
+            width: 100%;
+        }
+        td:first-child
+        {
+            width: 20%;
+        }
+        td:last-child
+        {
+            width: 80%;
+        }
+        input
+        {
+            width: 100%;
+            padding: 7px;
+        }
+        label
+        {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        #addbtn
+        {
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            width: 10%;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+        #back
+        {
+            text-decoration: none;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            width: 35%;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0);
+            color: green;
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h2>Add New Expense</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="ESummary">Expense Summary</label></td>
+                    <td><input type="text" placeholder="Expense Summary" id="ESummary"></td>
+                </tr>
+                <tr>
+                    <td><label for="Description">Description</label></td>
+                    <td><input type="text" placeholder="Description" id="Description"></td>
+                </tr>
+                <tr>
+                    <td><label for="Price">Price</label></td>
+                    <td><input type="number" placeholder="Price" id="Price"></td>
+                </tr>
+                <tr>
+                    <td><label for="Type">Type</label></td>
+                    <td><input type="text" placeholder="Type" id="Type"></td>
+                </tr>
+                <tr>
+                    <td><label for="Date">Date</label></td>
+                    <td><input type="text" id="Date" disabled></td>
+                </tr>
+            </table>
+        </form>
+        <button onclick="Insert()" id="addbtn">Add</button>
+        <a href="Task02.html"><button id="back">Go Back to Homepage</button></a>
+    </div>
+</body>
+
+</html>
